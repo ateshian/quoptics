@@ -1,0 +1,13 @@
+Time-dependent Hamiltonian simulation of full synthesis sequence
+
+resonator-process.png: evolution of fock state probabilities during swap/pulse/rotate sequence. P3 and P2 transition to the correct probabilities by the end of the sequence, but P0 and P1 do not. Ripples are caused by reduced numerical precision in the times
+
+qubit-process.png: qubit state probabilities during sequence. The final state is a superposition of |g> and |e>, which is incorrect (should be |g>)
+
+wigner-final.png: simulated resonator final state wigner function. contrast with...
+wigner-target.png: resonator target state wigner function. Wigner functions are good for comparing relative phases, but are not very interpretable. So we also include probability distributions.
+
+probs-final.png: fock state probabilities of final simulated state of resonator. contrast with...
+probs-target.png: probabilities of target resonator state.
+Target state is a superposition of |1> and |3>, but final resonator state is near a superposition of |0> and |3>, indicating the proper state was not reached.
+
