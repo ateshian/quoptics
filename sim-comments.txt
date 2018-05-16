@@ -1,0 +1,8 @@
+Wigner Figures + Fock probability figures
+
+Wigner function of each step t_i to t_i+1
+Fock state probabilities of each step t_i to t_i+1
+Used the analytically calculated t_i as the initial state for the solver and simulated the step from t_i to t_i+1, then compared with the state that we expect to see at t_i+1
+The simulation mostly matches the calculation at each step except for a phase shift (shown in the rotation of the resonator Wigner functions). But the Fock state probability distributions are all consistent.
+However this phase shift is critical because when the simulation is carried out all the way through, the final target state is not reached
+This could be due to an error somewhere in the calculation of times
